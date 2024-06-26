@@ -25,7 +25,7 @@ public class object_manager : MonoBehaviour
         {
             DeactivateALL();
         }
-        if (Input.GetKeyDown(KeyCode.P))
+        if (Input.GetKeyDown(KeyCode.RightArrow))
         {
             if (currentIndex < cubes.Length)
             {
@@ -41,7 +41,7 @@ public class object_manager : MonoBehaviour
                 currentIndex++;
             }
         }
-        if (Input.GetKeyDown(KeyCode.O))
+        if (Input.GetKeyDown(KeyCode.LeftArrow))
         {
             DeactivateALL();
             AcivateByIndex(currentIndex);
